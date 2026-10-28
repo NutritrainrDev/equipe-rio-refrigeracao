@@ -34,6 +34,7 @@
   "url": "https://nutritrainrdev.github.io/equipe-rio-refrigeracao/",
   "image": "https://nutritrainrdev.github.io/equipe-rio-refrigeracao/assets/img/og.jpg",
   "telephone": "+55 21 3734-9695",
+  "sameAs": ["https://www.instagram.com/equiperiorefrigeracao/"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "R. Sardenha, 26",
@@ -183,7 +184,7 @@ h1 .ln>span{display:block}
 .strip img:nth-child(3n+1){aspect-ratio:3/4}.strip img:nth-child(3n+2){aspect-ratio:1}.strip img:nth-child(3n){aspect-ratio:3/2}
 @keyframes drift{to{transform:translateX(-50%)}}
 .blue h2{font-size:var(--s-head);margin:72px 40px 0}
-.bar{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--g);margin:40px 40px 0}
+.bar{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--g);margin:40px 40px 0}
 .bar>*{min-height:96px;border-radius:16px;background:#2a6bff;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:var(--s-body);text-decoration:none;padding:12px;transition:background-color .2s}
 .bar a:hover{background:#3d79ff}
 .bar small{font-size:var(--s-small);opacity:.9;margin-top:4px}
@@ -255,7 +256,7 @@ h1 .ln>span{display:block}
   .strip img{height:110px}
   .blue h2{margin:48px 22px 0;font-size:9vw}
   .bar{grid-template-columns:1fr;margin:28px 22px 0}
-  .bar>*{min-height:60px;flex-direction:row;gap:8px}
+  .bar>*{min-height:76px}
   .blue .fine{margin:12px 22px 0}
   .ft{grid-template-columns:1fr 1fr}
   .f5{grid-column:1/3;order:-2;min-height:160px!important}
@@ -285,7 +286,7 @@ h1 .ln>span{display:block}
     <a href="#avaliacoes">Avaliações</a>
     <a href="#contato">Contato</a>
   </nav>
-  <a class="tile t-act" href="tel:+552137349695">Ligar <span class="nw">(21)&nbsp;3734&#8209;9695</span></a>
+  <a class="tile t-act" href="https://wa.me/5521983188833" target="_blank" rel="noopener">WhatsApp <span class="nw">(21)&nbsp;98318&#8209;8833</span></a>
 
   <div class="tile t-name pad">
     <h1 id="titulo" translate="no"><span class="ln"><span>Equipe Rio</span></span><span class="ln"><span>Refrigeração</span></span></h1>
@@ -305,8 +306,8 @@ h1 .ln>span{display:block}
         <button type="button" aria-pressed="false" data-s="Manutenção" data-t="Revisão preventiva para o aparelho trabalhar bem por mais tempo.">Manutenção</button>
         <button type="button" aria-pressed="false" data-s="Instalação" data-t="Escolha do melhor ponto na parede e conferência de canos antes de furar.">Instalar aparelho</button>
       </div>
-      <p class="out" id="out" aria-live="polite"><b>Escolha uma opção</b>e veja qual serviço pedir ao ligar.</p>
-      <a class="btn" href="tel:+552137349695">Ligar <span class="nw">(21)&nbsp;3734&#8209;9695</span></a>
+      <p class="out" id="out" aria-live="polite"><b>Escolha uma opção</b>e mande o pedido pronto no WhatsApp.</p>
+      <a class="btn" id="orderBtn" href="https://wa.me/5521983188833" target="_blank" rel="noopener">Pedir no WhatsApp</a>
     </div>
   </div>
 
@@ -318,8 +319,8 @@ h1 .ln>span{display:block}
   <div class="tile cell">
     <h2 id="svc-h" class="rv"><span>Do conserto</span><span>à instalação</span></h2>
     <div class="foot-row rv">
-      <p>Ar parado, pingando ou sem gelar? Ligue, conte o problema e a equipe vai até você.</p>
-      <a class="btn" href="tel:+552137349695">Ligar agora</a>
+      <p>Ar parado, pingando ou sem gelar? Mande mensagem, conte o problema e a equipe vai até você.</p>
+      <a class="btn" href="https://wa.me/5521983188833" target="_blank" rel="noopener">Chamar no WhatsApp</a>
     </div>
   </div>
   <div class="tile rows on-dark">
@@ -371,21 +372,22 @@ h1 .ln>span{display:block}
   <div class="bar rv">
     <a href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Sardenha%2C+26+-+Jardim+Carioca%2C+Rio+de+Janeiro+-+RJ%2C+21921-690" target="_blank" rel="noopener">R. Sardenha, 26<small>Jardim Carioca · abrir rota</small></a>
     <div>Abre às 8h<small>Ilha do Governador, Rio de Janeiro</small></div>
-    <a class="call" href="tel:+552137349695">Ligar <span class="nw">(21)&nbsp;3734&#8209;9695</span></a>
+    <a class="call" href="https://wa.me/5521983188833" target="_blank" rel="noopener">WhatsApp <span class="nw">(21)&nbsp;98318&#8209;8833</span><small>mensagem ou agendamento</small></a>
+    <a href="tel:+552137349695">Ligar <span class="nw">(21)&nbsp;3734&#8209;9695</span><small>telefone fixo</small></a>
   </div>
-  <p class="fine">Confirme o dia de atendimento por telefone.</p>
+  <p class="fine">Confirme o dia de atendimento pelo WhatsApp ou telefone.</p>
 </section>
 </main>
 
 <footer class="ft">
   <div class="tile f1"><p>Conserto, manutenção, limpeza e instalação de ar-condicionado.</p><p>Imagens e vídeo ilustrativos</p></div>
-  <nav class="tile f2" aria-label="Rodapé"><ul><li><a href="#servicos">Serviços</a></li><li><a href="#trabalho">Trabalho</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#">Voltar ao topo</a></li></ul></nav>
+  <nav class="tile f2" aria-label="Rodapé"><ul><li><a href="#servicos">Serviços</a></li><li><a href="#trabalho">Trabalho</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="https://www.instagram.com/equiperiorefrigeracao/" target="_blank" rel="noopener">Instagram</a></li><li><a href="#">Voltar ao topo</a></li></ul></nav>
   <div class="tile f3"><p>R. Sardenha, 26<br>Jardim Carioca<br>Rio de Janeiro, RJ<br>21921-690</p></div>
   <a class="tile f4" href="tel:+552137349695"><span>Telefone</span><b><span class="nw">(21)&nbsp;3734&#8209;9695</span></b></a>
   <div class="tile f5"><p translate="no">Equipe Rio Refrigeração</p></div>
-  <a class="tile f6" href="tel:+552137349695"><b>Ligar agora</b><svg viewBox="0 0 44 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h28M24 10l12 12-12 12"/></svg></a>
+  <a class="tile f6" href="https://wa.me/5521983188833" target="_blank" rel="noopener"><b>Chamar no WhatsApp</b><svg viewBox="0 0 44 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h28M24 10l12 12-12 12"/></svg></a>
 </footer>
-<div class="callbar" id="callbar"><a class="btn" href="tel:+552137349695">Ligar <span class="nw">(21)&nbsp;3734&#8209;9695</span></a></div>
+<div class="callbar" id="callbar"><a class="btn" href="https://wa.me/5521983188833" target="_blank" rel="noopener">WhatsApp <span class="nw">(21)&nbsp;98318&#8209;8833</span></a></div>
 
 <script>
 (function(){
@@ -428,11 +430,12 @@ h1 .ln>span{display:block}
   }
 
   /* service order card */
-  var out=d.getElementById('out'), chips=[].slice.call(d.querySelectorAll('.order .chips button'));
+  var out=d.getElementById('out'), ob=d.getElementById('orderBtn'), chips=[].slice.call(d.querySelectorAll('.order .chips button'));
   chips.forEach(function(c){
     c.addEventListener('click',function(){
       chips.forEach(function(x){ x.setAttribute('aria-pressed',x===c?'true':'false'); });
       out.innerHTML='<b>Peça: '+c.dataset.s+'</b>'+c.dataset.t;
+      ob.href='https://wa.me/5521983188833?text='+encodeURIComponent('Olá! Vim pelo site e preciso de '+c.dataset.s.toLowerCase()+' ('+c.textContent.toLowerCase()+').');
     });
   });
 
