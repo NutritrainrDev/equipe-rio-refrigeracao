@@ -24,8 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"> <!-- taste-skill-ignore: Inter is the DESIGN.md substitute for Coinbase Sans -->
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"></noscript> <!-- taste-skill-ignore: Inter is the DESIGN.md substitute for Coinbase Sans -->
-<link rel="preload" as="image" href="assets/img/hero.webp" media="(min-width: 901px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/hero-sq.webp" media="(max-width: 900px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/video/hero-poster.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +98,7 @@ p{margin:0}
 .t-nav a{font-size:var(--s-small);font-weight:500;text-decoration:none;position:relative;padding:6px 0}
 .t-nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--primary);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .t-nav a:hover::after{transform:scaleX(1)}
-.t-act{grid-column:10/13;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;transition:background-color .2s}
+.t-act{grid-column:10/13;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;gap:.35em;font-weight:600;text-decoration:none;transition:background-color .2s}
 .t-act:hover{background:var(--primary-active)}
 .t-name{grid-column:1/6;grid-row:2;background:var(--soft);display:flex;flex-direction:column;justify-content:flex-end}
 h1{font-size:var(--s-name);letter-spacing:-.045em;line-height:.92}
@@ -107,11 +106,7 @@ h1 .ln{display:block;overflow:hidden;padding:.08em 0 .04em}
 h1 .ln>span{display:block}
 .t-video{grid-column:6/13;grid-row:2/4;background:var(--dark)}
 .t-video .vid{position:absolute;inset:-8% 0;will-change:transform}
-.t-video picture{display:block;width:100%;height:100%}
-.t-video video,.t-video .kb{width:100%;height:100%;object-fit:cover;object-position:58% 50%}
-.kb{animation:breathe 24s ease-in-out infinite alternate;transform-origin:60% 50%}
-@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.09) translate3d(-1.5%,1%,0)}}
-.still .kb{animation-play-state:paused}
+.t-video video{width:100%;height:100%;object-fit:cover;object-position:58% 50%}
 .vctl{position:absolute;left:16px;bottom:16px;z-index:3;min-height:40px;padding:0 16px;border:0;border-radius:var(--pill);background:rgba(10,11,13,.72);color:#fff;font:500 var(--s-small)/1 var(--font);cursor:pointer}
 .vctl:hover{background:var(--dark)}
 .t-say{grid-column:1/4;grid-row:3;background:var(--dark);color:var(--on-dark)}
@@ -267,7 +262,7 @@ h1 .ln>span{display:block}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .js .rv,.js h1 .ln>span{opacity:1;transform:none;transition:none}
-  .strip,.kb{animation:none}
+  .strip{animation:none}
   .vid,.order,[data-speed]{transform:none!important}
 }
 </style>
@@ -294,7 +289,10 @@ h1 .ln>span{display:block}
 
   <div class="tile t-video on-dark">
     <div class="vid" id="vid">
-      <picture><source media="(max-width: 900px)" srcset="assets/img/hero-sq.webp"><img class="kb" src="assets/img/hero.webp" width="1600" height="893" alt="Serpentina de ar-condicionado aberta sendo lavada com jato fino de água sob luz fria" fetchpriority="high" decoding="async"></picture>
+      <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-poster.webp" width="1600" height="900" aria-label="Serpentina de ar-condicionado aberta sendo lavada com jato fino de água sob luz fria">
+        <source src="assets/video/hero-720.mp4" type="video/mp4" media="(max-width: 900px)">
+        <source src="assets/video/hero-1080.mp4" type="video/mp4">
+      </video>
     </div>
     <button class="vctl" id="vctl" type="button" aria-pressed="false">Pausar movimento</button>
     <div class="order" id="order">
